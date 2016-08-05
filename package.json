@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "umd-require-webpack-plugin": "0.0.1",
     "webpack": "^1.13.1"
   }
 }

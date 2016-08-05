@@ -53,9 +53,15 @@
 		}
 	})(function (require, exports) {
 		"use strict";
-		var foo_1 = require('./foo');
+		var foo_1 = __webpack_require__(2);
 
-		var ext_1 = require('external/foo');
+		var ext_1 = __webpack_require__(3);
+
+		var dynamic = ['a', 'b'];
+
+		__webpack_require__(1)!/* require */(/* empty */function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = dynamic; (function () {
+			console.log('hello world');
+		}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.call(this));
 	});
 
 

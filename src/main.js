@@ -10,4 +10,10 @@
 	var foo_1 = require('./foo');
 
 	var ext_1 = require('external/foo');
+
+	var dynamic = ['a', 'b'];
+
+	require(dynamic, function () {
+		console.log('hello world');
+	});
 });
