@@ -56,10 +56,6 @@
 		var foo_1 = require('./foo');
 
 		var ext_1 = require('external/foo');
-
-		require(['./bar'], function () {
-			console.log('hello world');
-		});
 	});
 
 
